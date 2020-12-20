@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Shubham Sagar</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento" rel="stylesheet">
+  <link rel="icon" href="favicon.png">
+  <script>
+  var isNS = (navigator.appName == "Netscape") ? 1 : 0;
+  if(navigator.appName == "Netscape") document.captureEvents(Event.MOUSEDOWN||Event.MOUSEUP);
+  function mischandler(){
+    return false;
+  }
+  function mousehandler(e){
+    var myevent = (isNS) ? e : event;
+    var eventbutton = (isNS) ? myevent.which : myevent.button;
+    if((eventbutton==2)||(eventbutton==3)) return false;
+  }
+  document.oncontextmenu = mischandler;
+  document.onmousedown = mousehandler;
+  document.onmouseup = mousehandler;
+</script>
+</head>
+
+<body>
+  <div class="top-container">
+    <img class="top-cloud" src="/images/cloud.png" alt="cloud">
+    <div class="title-text">
+      <h1>I'm Shubham Sagar.</h1>
+      <h2>a <span class="pro">pro</span>grammer.</h2>
+    </div>
+    <img class="bottom-cloud" src="/images/cloud.png" alt="cloud">
+    <img class="mountain" src="/images/mountain.png" alt="mountain-img">
+  </div>
+
+  <div class="middle-container">
+    <div class="profile">
+      <img src="/images/shubham.png" alt="shubham-img" width="200" height="200">
+      <h2>Hello.</h2>
+      <p class="intro">A passionate Software Engineer having experience of Web and Android Developer in multiple projects.
+        I am flexible about the technologies I work with, and adapt according to the need of the hour. I am passionate to learn more about UI/UX, Graphic Design, VR, AI, and Machine Learning</p>
+      </div>
+      <hr>
+      <div class="skills">
+        <h2>My Skills.</h2>
+        <div class="skill-row">
+          <img class="code-img" src="/images/computer.png" alt="code-img">
+
+          <h3>Web Development</h3>
+          <p>⚡Develop highly interactive Front end / User Interfaces using Html, Css & JavaScript.</p>
+          <p>⚡Accessibility ( WCGA Standards ) Based Applications.</p>
+        </div>
+        <div class="skill-row">
+          <img class="chilli-img" src="/images/Android.png" alt="Android-img">
+
+          <h3>Android Development</h3>
+          <p>⚡Develop top notch Android applications using Kotlin.</p>
+          <p>⚡Integration of third party libraries such as retrofit and payment libraries.</p>
+
+        </div>
+      </div>
+      <hr>
+      <div class="contact-me">
+        <h2>Get In Touch</h2>
+        <p class="contact-message">Discuss a project or just want to say Hi? My inbox is open for all.</p>
+        <a class="btn" href="mailto:shubham.sagar7696@gmail.com">CONTACT ME</a>
+      </div>
+    </div>
+
+
+    <div class="bottom-container">
+      <a class="footer-link" href="https://www.linkedin.com/in/shubham--sagar/">LinkedIn</a>
+      <a class="footer-link" href="https://github.com/shubhamsagar/">Github</a>
+      <p class="copyright">© 2020 Shubham Sagar</p>
+    </div>
+  </body>
+
+  </html>
